@@ -164,6 +164,46 @@
     letter-spacing:.05em;
     color:var(--navy);
   }
+  .location-box{
+    margin:14px 12px 0;
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:12px 13px;
+    box-shadow:0 1px 2px rgba(20,35,60,.04);
+  }
+  .location-head{
+    display:flex;
+    align-items:flex-start;
+    gap:9px;
+    margin-bottom:10px;
+  }
+  .location-head svg{
+    flex:none;
+    margin-top:2px;
+    stroke:var(--hyundai);
+  }
+  .location-name{
+    font-size:13.5px;
+    font-weight:700;
+    color:var(--navy);
+    line-height:1.35;
+  }
+  .location-addr{
+    font-size:12.5px;
+    color:var(--text-sub);
+    margin-top:2px;
+  }
+  .btn-map{
+    height:40px;
+    color:#03A94D;
+    background:#F4FBF6;
+    border:1px solid #CFEAD8;
+    font-size:13.5px;
+    font-weight:700;
+  }
+  .btn-map:hover{background:#EAF8EE}
+  .btn-map svg{stroke:#03A94D}
 
   /* ───────── 섹션 ───────── */
   .section{margin-top:30px}
@@ -391,6 +431,27 @@
   </div>
 
   <p class="tel-line">010-8556-3857</p>
+
+  <div class="location-box">
+    <div class="location-head">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M12 21s-6.5-5.3-6.5-11a6.5 6.5 0 1 1 13 0c0 5.7-6.5 11-6.5 11Z"/>
+        <circle cx="12" cy="10" r="2.3"/>
+      </svg>
+      <div>
+        <div class="location-name">현대자동차 화명대리점</div>
+        <div class="location-addr">부산 북구 금곡대로199번길 3 (수정역 5번 출구 366m)</div>
+      </div>
+    </div>
+    <a class="btn btn-map" href="https://naver.me/Gn0nk7P7" target="_blank" rel="noopener" aria-label="네이버 지도에서 화명대리점 실물사진과 위치 보기">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <rect x="3" y="5" width="18" height="14" rx="2.2"/>
+        <circle cx="8.5" cy="10" r="1.5"/>
+        <path d="m21 16-4.8-4.5a1.5 1.5 0 0 0-2.1 0L7 18.5"/>
+      </svg>
+      네이버 지도 실물사진 · 위치 보기
+    </a>
+  </div>
 
   <!-- 도와드리는 일 -->
   <section class="section">
